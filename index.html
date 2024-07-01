@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio website</title>
+    <title>My Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,16 +12,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <button id="theme-toggle">Toggle Theme</button>
     <div class="container">
       <header>
         <h1>My Portfolio</h1>
         <p>Nickson Mokua Mogaka</p>
       </header>
-      <li>About</li>
-      <li>Socials</li>
-      <li>Contact</li>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#socials">Socials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
       <section id="about">
         <h2>About</h2>
@@ -40,40 +49,51 @@
           evolving field.
         </p>
       </section>
-      <img
-        src="https://cdn.businessday.ng/2019/11/Technology-industry.jpg"
-        alt="tech pic"
-        class="linked image"
-      />
+      <div class="image-container">
+        <img
+          src="https://cdn.businessday.ng/2019/11/Technology-industry.jpg"
+          alt="tech pic"
+          class="linked-image"
+        />
+      </div>
 
-      <section id="socials">
+      <section id="socials" class="socials-container">
         <h2>Socials</h2>
-        <ul>
-          Instagram
-          <a href="https://www.instagram.com/nick_mokua/" target="_blank"
-            ><i class="fa-brands fa-instagram fa-5x"></i
-          ></a>
-          GitHub
-          <a href="https://github.com/dashboard" target="_blank"
-            ><i class="fa-brands fa-github fa-5x"></i
-          ></a>
-        </ul>
+        <div class="social-links">
+          <div>
+            Instagram
+            <a href="https://www.instagram.com/nick_mokua/" target="_blank"
+              ><i class="fa-brands fa-instagram fa-5x"></i
+            ></a>
+          </div>
+          <div>
+            GitHub
+            <a href="https://github.com/dashboard" target="_blank"
+              ><i class="fa-brands fa-github fa-5x"></i
+            ></a>
+          </div>
+        </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="contact-container">
         <h2>Contact</h2>
         <p>
           Email:
-          <a href="nickson.mogaka@student.moringaschool.com">
+          <a href="mailto:nickson.mogaka@student.moringaschool.com">
             nickson.mogaka@student.moringaschool.com</a
           >
         </p>
         <p>Phone Number: 0738553094</p>
+        <button id="contact-submit">Submit</button>
       </section>
     </div>
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSELg4i-oeodQNQHRbbqvG4In1dBIEsAa3hcTKRryAfUwos-z5xodfZFazTEe1vJCkUOA&usqp=CAU"
-      alt="moringa school logo"
-    />
+    <div class="image-container">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSELg4i-oeodQNQHRbbqvG4In1dBIEsAa3hcTKRryAfUwos-z5xodfZFazTEe1vJCkUOA&usqp=CAU"
+        alt="moringa school logo"
+        class="linked-image"
+      />
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
